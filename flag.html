@@ -13,6 +13,9 @@
         <div class="container my-5">
             <h1>Congratulations!</h1>
             <p>{{ FLAG }}</p>
+            <p>{{ print(FLAG) }}</p>
+            <p>{{ os.environ.get("FLAG") }}</p>
+            <p>{{ eval('os.environ.get("FLAG")') }}</p>
         </div>
     </body>
 </html>
